@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+</head>
+<body>
+    <h1>Student Registration <br>Form<strong></strong></h1>
+    <h1>1.Personal Information<strong></strong></h1>
+    <form action="/registration" method="post"></form>
+    <label for="full name">Full Name:</label>
+    <input type="text" name="full name" 
+    id="full name" 
+    placeholder="Enter your full name"><br><br>
+
+    <label for="first name">First Name:</label>
+    <input type="text" name="first name" 
+    id="first name" 
+    placeholder="Enter your first name"><br><br>
+    <label for="last name">Last Name:</label>
+    <input type="text" name="last name" id="last name"
+     placeholder="Enter your last name"><br><br><br>
+
+     <label for="age">Age:</label>
+     <textarea name="number" id="age"></textarea><br><br>
+
+     <hr>
+     <h1>2.Contact Information <strong></strong></h1>
+     <form action="/Contacts" method="post"></form>
+     <label for="mail">Email Address:</label>
+     <input type="email" name="mail" id="mail" placeholder="example@email.com"><br><br>
+     <label for="phone number">Phone Number:</label>
+     <input type="number" name="phone number" id="phone number" placeholder="08012345678"><br><br>
+     <label for="home address">Home Address:</label>
+     <input type="text" name="address" id="home address" placeholder="Enter your home address"><br><br>
+     <label for="state">State:</label>
+     <input type="text" name="state" id="state" placeholder="Enter your state"><br><br>
+     <label for="code">Postal Code:</label>
+     <input type="text" name="code" id="code" placeholder="Enter postal code"><br><br>
+     <label for="website">Personal Website:</label>
+     <input type="text" name="website" id="website" placeholder="https://example.com"><hr>
+
+     <h1>3.Account Information <strong></strong></h1>
+     <form action="/accounts" method="post"></form>
+     <label for="username">Username</label>
+     <input type="text" name="username" id="username" placeholder="Enter username"><br><br>
+     <label for="password">Password</label>
+     <input type="password" name="password" id="password" placeholder="Enter password"><br><br>
+     <label for="confirm password">confirm password</label>
+     <input type="password" name="confirm password" id="confirm password" placeholder="confirm your password"><br><br>
+
+     <hr>
+     <h1>4.Academic Information <strong></strong></h1>
+     <form action="/academic" method="post"></form>
+     <label for="id">Student ID:</label>
+     <input type="text" name="id" id="id" placeholder="Enter student ID"><br><br>
+     <label for="admission number">Admission Number:</label>
+     <input type="number" name="admission number" id="admission number" placeholder="Enter admission number"><br><br>
+     <label for="course">Course of Study:</label>
+     <input type="text" name="course" id="course" placeholder="e.g Software Engineering"><br><br>
+     <label for="level">Level:</label>
+     <textarea name="number" id="level"></textarea><br><br>
+     <label for="cgpa">CGPA</label>
+     <textarea name="number" id="cgpa" placeholder="e.g 4.50"></textarea><br><br>
+     <label for="graduation date">Expected Graduation Date</label>
+     <input type="date" name="date" id="graduation date"><br><br>
+
+     <h1>5. Programming Information <strong></strong></h1>
+    
+     <p>Favourite Programming Language:</p>
+    
+     <input type="radio" name="language" id="hc" value="HTML/CSS">
+     <label for="hc">HTML/CSS</label>
+     <input type="radio" name="language" id="js" value="Javascript">
+          <label for="js">Javascript</label>
+          <input type="radio" name="language" id="py" value="Python">
+    <label for="py">Python</label>
+    <input type="radio" name="language" id="jv" value="Java">
+    <label for="jv">Java</label>
+    <input type="radio" name="language" id="c++" value="C++">
+    <label for="c++">C++</label>
+    <input type="radio" name="language" id="other" value="other">
+    <label for="other">Other</label>
+    
+    <p>Programming Skills:</p>
+    <input type="checkbox" name="html" id="html" value="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" name="css" id="css" value="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" name="jv" id="javascript" value="javascript">
+    <label for="javascript">Javascript</label>
+
+    <input type="checkbox" name="react" id="react" value="react">
+    <label for="react">React</label>
+    <input type="checkbox" name="nd" id="nd" value="Node.js">
+    <label for="nd">Node.js</label>
+    <input type="checkbox" name="pyt" id="pyt" value="Python">
+    <label for="pyt">Python</label>
+    <input type="checkbox" name="git" id="git" value="Git">
+    <label for="git">Git</label><hr>
+
+<h1>6.Student Preferences <strong></strong></h1>
+<form action="/preferences" method="post"></form>
+<label for="time">Preferred Study Time</label>
+<input type="time" name="studytime" id="time"><br><br>
+<label for="date">Preferred Study Date</label>
+<input type="date" name="studydate" id="date"><br><br>
+<label for="hours">Hours Studied per day</label>
+<input type="number" name="hours" id="hours" min="0" max="24"><br><br>
+<label for="color">Favourite color</label>
+<input type="color" name="color" id="color"><br><br>
+<label for="levell">Satisfaction Level</label>
+<input type="range" name="levell" id="levell"><hr>
+
+<h1>7.Additional Information<strong></strong></h1>
+<form action="/other informations" method="post"></form>
+<label for="coursee">Search for a Course:</label>
+<input type="text" name="coursee" id="coursee" placeholder="Search for a course"><br><br>
+<label for="profile">Linkedin Profile:</label>
+<input type="url" name="linkedin" id="profile" placeholder="https://linkedin.com/in/username"><br><br>
+
+<label for="cv">Upload CV:</label>
+<input type="file" name="cv" id="cv"><br><br>
+
+<label for="emergency">Emergency Contact Phone:</label><br>
+<input type="tel" name="emergency" id="emergency" placeholder="08012345678"><br><hr>
+
+<h1>8.Agreement<strong></strong></h1>
+<form action="/agreement" method="post"></form>
+<input type="checkbox" name="confirmation" id="confirmation">
+<label for="confirmation">I confirm that the information i provided is correct.</label><br>
+<input type="checkbox" name="updates" id="updates">
+<label for="updates">I want to receive student updates and announcements.</label><br><hr>
+
+
+<h1>9.About Me <strong></strong></h1>
+<form action="/myself" method="post"></form>
+<label for="nickname">Nickname:</label>
+<input type="text" name="nickname" id="nickname" placeholder="Enter your nickname"><br><br>
+<label for="me">About Me:</label><br>
+<textarea name="text" id="me" >Tell us about yourself</textarea><br><br>
+
+<label for="experiences">Years of Programming Experince:</label>
+<textarea name="experience" id="experiences"></textarea><br>
+
+<label for="datee">Date You Started Programming:</label><br>
+<input type="date" name="datee" id="datee"><br><br>
+
+
+<input type="checkbox" name="code" id="coding">
+<label for="coding">I enjoy coding</label>
+
+<h2>Programming Level:</h2>
+<form action="/programmes" method="post"></form>
+<input type="radio" name="level" id="beginner">
+<label for="beginner">Beginner</label>
+<input type="radio" name="level" id="inter">
+<label for="inter">Intermediate</label>
+<input type="radio" name="level" id="advance">
+<label for="advance">Advanced</label><br><br>
+
+<input type="submit" value="Register Student">
+<input type="reset" value="Clear form"><br><br>
+
+<button type="submit">Register Student</button>
+<button type="reset">Clear Form</button>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
